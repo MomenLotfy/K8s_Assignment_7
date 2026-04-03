@@ -1,0 +1,11 @@
+# pending-selector.yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pending-selector
+spec:
+  nodeSelector:
+    env: lab          # label no longer exists → Pending
+  containers:
+  - name: nginx
+    image: nginx:latest

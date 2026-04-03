@@ -1,20 +1,16 @@
 apiVersion: apps/v1
-kind: StatefulSet
+kind: DaemonSet
 metadata:
-  name: web
+  name: node-monitor
 spec:
   selector:
     matchLabels:
-      app: web
-  serviceName: "web"
-  replicas: 3
+      app: node-monitor
   template:
     metadata:
       labels:
-        app: web
+        app: node-monitor
     spec:
       containers:
-      - name: nginx
+      - name: monitor
         image: nginx:latest
-        ports:
-        - containerPort: 80

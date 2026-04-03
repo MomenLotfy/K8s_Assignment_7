@@ -1,0 +1,10 @@
+# static-pinned.yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: static-pinned
+spec:
+  nodeName: minikube   # bypasses scheduler completely
+  containers:
+  - name: nginx
+    image: nginx:latest
