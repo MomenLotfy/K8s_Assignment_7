@@ -1,0 +1,24 @@
+--- Task 1: nodeName Pod ---
+
+--- Task 2: NodeSelector & Pending Status ---
+NAME               READY   STATUS    RESTARTS   AGE
+pending-selector   0/1     Pending   0          41m
+
+--- Task 3: NoExecute Eviction Proof ---
+
+--- Task 5: QoS Classes Verification ---
+affinity-demo	BestEffort
+besteffort-pod	BestEffort
+burstable-pod	Burstable
+demo-7fb87548c-ctgzx	BestEffort
+demo-7fb87548c-qfqnz	BestEffort
+guaranteed-pod	Guaranteed
+node-monitor-sxjkw	BestEffort
+pending-selector	BestEffort
+static-nginx-minikube	BestEffort
+web-0	BestEffort
+web-1	BestEffort
+web-2	BestEffort
+
+--- Task 7: Static Pod Proof ---
+static-nginx-minikube   1/1     Running   0          5m23s   10.244.2.233   minikube   <none>           <none>
